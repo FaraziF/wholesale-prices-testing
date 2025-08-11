@@ -53,12 +53,6 @@ The test suite covers the following wholesale pricing scenarios:
 
 ## 🏃‍♂️ Running Tests
 
-### Run All Tests
-
-```bash
-npm test
-```
-
 ### Run Tests in Cypress Test Runner
 
 ```bash
@@ -103,50 +97,6 @@ The project is configured to:
 - **Base URL**: `http://localhost:10003`
 - **Spec Pattern**: `**/*.feature`
 - **Preprocessor**: esbuild with Cucumber support
-
-## 🔧 Development
-
-### Adding New Test Scenarios
-
-1. Add new scenarios to the `.feature` file
-2. Implement corresponding step definitions in the `.js` file
-3. Follow the Given-When-Then BDD pattern
-
-### Example Feature Addition
-
-```gherkin
-Scenario: Wholesale price calculation
-  Given I am a wholesale customer
-  When I purchase multiple items
-  Then I should see bulk discount applied
-```
-
-## 📊 Test Reports
-
-Test results and reports are generated in the following directories:
-
-- `cypress/videos/` - Test execution videos
-- `cypress/screenshots/` - Failure screenshots
-- `cypress/downloads/` - Downloaded files during tests
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-1. **Application Not Running**
-
-   - Ensure your application is running at `http://localhost:10003`
-   - Check if the port is available and not blocked
-
-2. **Test Failures**
-
-   - Verify wholesale customer credentials are correct
-   - Check if the application's wholesale pricing is properly configured
-   - Review Cypress console logs for detailed error information
-
-3. **Dependency Issues**
-   - Clear `node_modules` and reinstall: `rm -rf node_modules && npm install`
-   - Update Cypress: `npx cypress update`
 
 ## 🤝 Contributing
 
